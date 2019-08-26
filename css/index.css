@@ -260,9 +260,6 @@ header .headerTextButtonContainer .headerButtonContainer button {
   align-items: center;
   background-color: #97AABD;
 }
-.cta * {
-  border: 1px solid red;
-}
 .cta p {
   color: #EEE;
   font-size: 4rem;
@@ -278,4 +275,21 @@ header .headerTextButtonContainer .headerButtonContainer button {
   margin: 2%;
   border-radius: 5px;
   font-size: 2rem;
+}
+footer {
+  background-color: #314455;
+  display: flex;
+  justify-content: center;
+  padding: 2.5%;
+}
+footer .footerNavLinks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .footerNavLinks a {
+  margin: 2.5%;
+  text-decoration: none;
+  color: #EEE;
+  font-size: 1.5rem;
 }
