@@ -1,0 +1,74 @@
+header {
+    min-height: 60vh;
+    background: url('../img/hero-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        
+        .navLinks {
+            width: 25%;
+            height: 10%;
+            display: flex;
+            justify-content: space-around;
+            background: rgba(16,16,16, 0.8);
+
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 5%;
+            }
+        }
+
+        .navLogo {
+            display: flex;
+            justify-content: flex-end;
+            
+            img {
+                height: 20%;
+            }
+        }
+    }
+
+    .headerTextButtonContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 20vh;
+
+        .headerTextContainer {
+            width: 50%;
+            color: #EEE;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            h1 {
+                padding: 2.5%;
+                font-size: 3rem;
+            }
+
+            p {
+                padding: 2.5%;
+                font-size: 1.5rem;
+            }
+        }
+
+        .headerButtonContainer {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                color: #EEE;
+                padding:  5%;
+                font-size: 1.8rem;
+                background-color: @ctaBtnColor;
+                border-radius: 10px;
+                border: none;
+            }
+        }
+    }
+}
