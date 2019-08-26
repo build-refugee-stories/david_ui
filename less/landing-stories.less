@@ -1,0 +1,57 @@
+.stories {
+    background: @storiesBgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #EEE;
+    min-height: 40vh;
+
+    .storiesSectionTitleContainer {
+        padding: 2.5%;
+        font-size: 3rem;
+    }
+
+    .storiesContainer {
+        display: flex;
+
+        .storyContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            padding: 1%;
+
+            .storyImageContainer {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                button {
+                    position: absolute;
+                    top: 10%;
+                    left: 75%;
+                    background-color: @ctaBtnColor;
+                    color: #EEE;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 2.5%;
+                }
+            }
+
+            .storyDescription {
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                padding: 2.5%;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
