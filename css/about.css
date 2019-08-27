@@ -315,6 +315,11 @@ header .teamIntroMissionContainer .missionContainer p {
   width: 25%;
   padding: 2%;
 }
+@media (max-width: 800px) {
+  .team .teamMember {
+    width: 30%;
+  }
+}
 @media (max-width: 500px) {
   .team .teamMember {
     width: 95%;
