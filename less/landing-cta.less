@@ -1,0 +1,40 @@
+.cta {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @ctaSectionBgColor;
+
+    p {
+        color: #EEE;
+        font-size: 4rem;
+        text-align: center;
+        padding: 5%;
+        line-height: 125%;
+
+        @media @phone {
+            font-size: 2rem;
+        }
+    }
+
+    .ctaImageContainer {
+
+        @media @tablet {
+            order: 1;
+        }
+
+        @media @phone {
+            display: none;
+        }
+    }
+
+    button {
+        background-color: @ctaBtnColor;
+        color: #EEE;
+        border: none;
+        padding: 3%;
+        margin: 2%;
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+}

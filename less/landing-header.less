@@ -1,0 +1,124 @@
+header {
+    min-height: 40vh;
+    background: url('../img/hero-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+
+    @media @phone {
+        background: @ctaBtnColor;
+        min-height: 50vh;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        
+        .navLinks {
+            width: 25%;
+            height: 10%;
+            display: flex;
+            justify-content: space-around;
+            background: rgba(16,16,16, 0.8);
+
+            @media @tablet {
+                width: 100%;
+            }
+            
+            @media @phone {
+                width: 100%;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 5%;
+            }
+        }
+
+        .navLogo {
+            display: flex;
+            justify-content: flex-end;
+
+            @media @phone {
+                display: none;
+            }
+            
+            img {
+                height: 20%;
+            }
+        }
+    }
+
+    .headerTextButtonContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5%;
+        height: 25vh;
+
+        @media @phone {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .headerTextContainer {
+            width: 50%;
+            height: auto;
+            color: #EEE;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: rgba(16,16,16, 0.8);
+            border-radius: 5px;
+            margin-left: 2%;
+            margin-bottom: 2%;
+
+            @media @phone {
+                width: 100%;
+                background: none;
+            }
+
+            h1 {
+                padding-top: 1%;
+                font-size: 3rem;
+                margin-bottom: -2.5%;
+
+                @media @tablet {
+                    font-size: 2rem;
+                    margin-top: 2%;
+                }
+            }
+
+            p {
+                padding: 5%;
+                margin-bottom: 2%;
+                font-size: 1.5rem;
+                line-height: 125%;
+
+                @media @tablet {
+                    font-size: 1.25rem;
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .headerButtonContainer {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                color: #EEE;
+                padding:  5%;
+                font-size: 1.8rem;
+                background-color: @ctaBtnColor;
+                border-radius: 10px;
+                border: none;
+
+                @media @phone {
+                    background-color: rgba(16,16,16, 0.8);
+                }
+            }
+        }
+    }
+}
