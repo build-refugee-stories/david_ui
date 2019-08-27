@@ -216,6 +216,7 @@ header .headerTextButtonContainer .headerTextContainer {
 header .headerTextButtonContainer .headerTextContainer h1 {
   padding-top: 1%;
   font-size: 3rem;
+  margin-bottom: -2.5%;
 }
 header .headerTextButtonContainer .headerTextContainer p {
   padding: 5%;
@@ -338,6 +339,11 @@ header .headerTextButtonContainer .headerButtonContainer button {
   .cta p {
     font-size: 2rem;
   }
+}
+.cta .ctaImageContainer {
+  height: 25%;
+}
+@media (max-width: 500px) {
 }
 .cta button {
   background-color: #C96567;
