@@ -144,6 +144,11 @@ header {
   background-size: cover;
   width: 100%;
 }
+@media (max-width: 500px) {
+  header {
+    background: #C96567;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -155,6 +160,11 @@ header nav .navLinks {
   justify-content: space-around;
   background: rgba(16, 16, 16, 0.8);
 }
+@media (max-width: 500px) {
+  header nav .navLinks {
+    width: 100%;
+  }
+}
 header nav .navLinks a {
   color: white;
   text-decoration: none;
@@ -164,6 +174,11 @@ header nav .navLogo {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  header nav .navLogo {
+    display: none;
+  }
+}
 header nav .navLogo img {
   height: 20%;
 }
@@ -172,6 +187,12 @@ header .headerTextButtonContainer {
   justify-content: space-between;
   padding: 2.5%;
   height: 25vh;
+}
+@media (max-width: 500px) {
+  header .headerTextButtonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header .headerTextButtonContainer .headerTextContainer {
   width: 50%;
@@ -183,6 +204,12 @@ header .headerTextButtonContainer .headerTextContainer {
   border-radius: 5px;
   margin-left: 2%;
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  header .headerTextButtonContainer .headerTextContainer {
+    width: 100%;
+    background: none;
+  }
 }
 header .headerTextButtonContainer .headerTextContainer h1 {
   padding: 2.5%;
@@ -207,6 +234,11 @@ header .headerTextButtonContainer .headerButtonContainer button {
   background-color: #C96567;
   border-radius: 10px;
   border: none;
+}
+@media (max-width: 500px) {
+  header .headerTextButtonContainer .headerButtonContainer button {
+    background-color: rgba(16, 16, 16, 0.8);
+  }
 }
 .stories {
   background: #314455;
