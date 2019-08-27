@@ -20,6 +20,10 @@ header {
             justify-content: space-around;
             background: rgba(16,16,16, 0.8);
 
+            @media @tablet {
+                width: 100%;
+            }
+            
             @media @phone {
                 width: 100%;
             }
@@ -77,6 +81,11 @@ header {
                 padding-top: 1%;
                 font-size: 3rem;
                 margin-bottom: -2.5%;
+
+                @media @tablet {
+                    font-size: 2rem;
+                    margin-top: 2%;
+                }
             }
 
             p {
@@ -84,6 +93,11 @@ header {
                 margin-bottom: 2%;
                 font-size: 1.5rem;
                 line-height: 125%;
+
+                @media @tablet {
+                    font-size: 1.25rem;
+                    margin-top: 2%;
+                }
             }
         }
 
