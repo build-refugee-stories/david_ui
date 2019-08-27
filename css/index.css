@@ -147,6 +147,7 @@ header {
 @media (max-width: 500px) {
   header {
     background: #C96567;
+    min-height: 50vh;
   }
 }
 header nav {
@@ -196,6 +197,7 @@ header .headerTextButtonContainer {
 }
 header .headerTextButtonContainer .headerTextContainer {
   width: 50%;
+  height: auto;
   color: #EEE;
   display: flex;
   flex-direction: column;
@@ -212,7 +214,7 @@ header .headerTextButtonContainer .headerTextContainer {
   }
 }
 header .headerTextButtonContainer .headerTextContainer h1 {
-  padding: 2.5%;
+  padding-top: 1%;
   font-size: 3rem;
 }
 header .headerTextButtonContainer .headerTextContainer p {
@@ -331,6 +333,11 @@ header .headerTextButtonContainer .headerButtonContainer button {
   text-align: center;
   padding: 5%;
   line-height: 125%;
+}
+@media (max-width: 500px) {
+  .cta p {
+    font-size: 2rem;
+  }
 }
 .cta button {
   background-color: #C96567;
