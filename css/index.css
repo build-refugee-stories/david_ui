@@ -170,7 +170,8 @@ header nav .navLogo img {
 header .headerTextButtonContainer {
   display: flex;
   justify-content: space-between;
-  height: 20vh;
+  padding: 2.5%;
+  height: 25vh;
 }
 header .headerTextButtonContainer .headerTextContainer {
   width: 50%;
@@ -188,8 +189,10 @@ header .headerTextButtonContainer .headerTextContainer h1 {
   font-size: 3rem;
 }
 header .headerTextButtonContainer .headerTextContainer p {
-  padding: 2.5%;
+  padding: 5%;
+  margin-bottom: 2%;
   font-size: 1.5rem;
+  line-height: 125%;
 }
 header .headerTextButtonContainer .headerButtonContainer {
   width: 50%;
