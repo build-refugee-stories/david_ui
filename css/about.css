@@ -296,6 +296,40 @@ header .teamIntroMissionContainer .missionContainer p {
   font-size: 1.25rem;
   padding: 2.5%;
 }
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #C96567;
+  color: #EEE;
+}
+.team .teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 2%;
+}
+.team .teamMember img {
+  width: 100%;
+}
+.team .teamMember h2,
+.team .teamMember h3,
+.team .teamMember p,
+.team .teamMember a {
+  padding: 5%;
+  width: 100%;
+}
+.team .teamMember .githubLink {
+  border: 1px solid #EEE;
+  width: 80%;
+  text-align: center;
+  padding: 2.5%;
+}
+.team .teamMember a {
+  text-decoration: none;
+  color: #EEE;
+}
 footer {
   background-color: #314455;
   display: flex;
