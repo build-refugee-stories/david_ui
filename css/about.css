@@ -303,6 +303,11 @@ header .teamIntroMissionContainer .missionContainer p {
   background: #C96567;
   color: #EEE;
 }
+@media (max-width: 500px) {
+  .team {
+    flex-direction: column;
+  }
+}
 .team .teamMember {
   display: flex;
   flex-direction: column;
@@ -310,8 +315,18 @@ header .teamIntroMissionContainer .missionContainer p {
   width: 25%;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .team .teamMember {
+    width: 95%;
+  }
+}
 .team .teamMember img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .team .teamMember img {
+    width: 95%;
+  }
 }
 .team .teamMember h2,
 .team .teamMember h3,
@@ -320,11 +335,30 @@ header .teamIntroMissionContainer .missionContainer p {
   padding: 5%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .team .teamMember h2,
+  .team .teamMember h3,
+  .team .teamMember p,
+  .team .teamMember a {
+    padding: 2%;
+    width: 90%;
+  }
+}
+.team .teamMember .name,
+.team .teamMember .role {
+  text-align: center;
+  width: 100%;
+}
 .team .teamMember .githubLink {
   border: 1px solid #EEE;
   width: 80%;
   text-align: center;
   padding: 2.5%;
+}
+@media (max-width: 500px) {
+  .team .teamMember .githubLink {
+    margin-left: -10%;
+  }
 }
 .team .teamMember a {
   text-decoration: none;

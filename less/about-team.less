@@ -6,6 +6,10 @@
     background: @ctaBtnColor;
     color: #EEE;
 
+    @media @phone {
+        flex-direction: column;
+    }
+
     .teamMember {
         display: flex;
         flex-direction: column;
@@ -13,12 +17,30 @@
         width: 25%;
         padding: 2%;
 
+        @media @phone {
+            width: 95%;
+        }
+
         img {
             width: 100%;
+
+            @media @phone {
+                width: 95%;
+            }
         }
 
         h2, h3, p, a {
             padding: 5%;
+            width: 100%;
+
+            @media @phone {
+                padding: 2%;
+                width: 90%;
+            }
+        }
+
+        .name, .role {
+            text-align: center;
             width: 100%;
         }
 
@@ -27,6 +49,10 @@
             width: 80%;
             text-align: center;
             padding: 2.5%;
+
+            @media @phone {
+                margin-left: -10%;;
+            }
         }
 
         a {
