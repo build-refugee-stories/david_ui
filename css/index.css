@@ -340,10 +340,10 @@ header .headerTextButtonContainer .headerButtonContainer button {
     font-size: 2rem;
   }
 }
-.cta .ctaImageContainer {
-  height: 25%;
-}
 @media (max-width: 500px) {
+  .cta .ctaImageContainer {
+    display: none;
+  }
 }
 .cta button {
   background-color: #C96567;
