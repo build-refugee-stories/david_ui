@@ -33,6 +33,11 @@
             .storyImageContainer {
                 position: relative;
 
+                @media @tablet {
+                    position: static;
+                    margin: 0;
+                }
+
                 @media @phone {
                     position: static;
                     margin: 0;
@@ -52,6 +57,13 @@
                     border-radius: 5px;
                     border: none;
                     padding: 2.5%;
+
+                    @media @tablet {
+                        position: static;
+                        width: 100%;
+                        border-radius: 0px;
+                        font-size: 1.5rem;
+                    }
 
                     @media @phone {
                         position: static;

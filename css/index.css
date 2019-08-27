@@ -296,6 +296,12 @@ header .headerTextButtonContainer .headerButtonContainer button {
 .stories .storiesContainer .storyContainer .storyImageContainer {
   position: relative;
 }
+@media (max-width: 800px) {
+  .stories .storiesContainer .storyContainer .storyImageContainer {
+    position: static;
+    margin: 0;
+  }
+}
 @media (max-width: 500px) {
   .stories .storiesContainer .storyContainer .storyImageContainer {
     position: static;
@@ -315,6 +321,14 @@ header .headerTextButtonContainer .headerButtonContainer button {
   border-radius: 5px;
   border: none;
   padding: 2.5%;
+}
+@media (max-width: 800px) {
+  .stories .storiesContainer .storyContainer .storyImageContainer button {
+    position: static;
+    width: 100%;
+    border-radius: 0px;
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 500px) {
   .stories .storiesContainer .storyContainer .storyImageContainer button {
