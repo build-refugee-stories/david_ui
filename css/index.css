@@ -247,6 +247,11 @@ header .headerTextButtonContainer .headerButtonContainer {
   justify-content: center;
   align-items: center;
 }
+header .headerTextButtonContainer .headerButtonContainer div:hover .share {
+  background: #EEE;
+  color: #C96567;
+  cursor: pointer;
+}
 header .headerTextButtonContainer .headerButtonContainer button {
   color: #EEE;
   padding: 5%;
@@ -322,6 +327,11 @@ header .headerTextButtonContainer .headerButtonContainer button {
   border: none;
   padding: 2.5%;
 }
+.stories .storiesContainer .storyContainer .storyImageContainer button:hover {
+  background: #EEE;
+  color: #C96567;
+  cursor: pointer;
+}
 @media (max-width: 800px) {
   .stories .storiesContainer .storyContainer .storyImageContainer button {
     position: static;
@@ -389,6 +399,11 @@ header .headerTextButtonContainer .headerButtonContainer button {
   margin: 2%;
   border-radius: 5px;
   font-size: 2rem;
+}
+.cta button:hover {
+  background: #EEE;
+  color: #C96567;
+  cursor: pointer;
 }
 footer {
   background-color: #314455;
