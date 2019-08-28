@@ -12,23 +12,22 @@
     }
 
     .storiesContainer {
-        display: flex;
+        max-width: 95%;
+
+        @media @tablet {
+            max-width: 90%;
+        }
 
         @media @phone {
-            flex-direction: column;
-            align-items: center;
+            max-width: 88%;
         }
+
 
         .storyContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 33%;
             padding: 1%;
-
-            @media @phone {
-                width: 100%;
-            }
 
             .storyImageContainer {
                 position: relative;
@@ -51,7 +50,7 @@
                 button {
                     position: absolute;
                     top: 10%;
-                    left: 75%;
+                    left: 65%;
                     background-color: @ctaBtnColor;
                     color: #EEE;
                     border-radius: 5px;
