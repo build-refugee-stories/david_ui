@@ -247,6 +247,11 @@ header .headerTextButtonContainer .headerButtonContainer {
   justify-content: center;
   align-items: center;
 }
+header .headerTextButtonContainer .headerButtonContainer div:hover .share {
+  background: #EEE;
+  color: #C96567;
+  cursor: pointer;
+}
 header .headerTextButtonContainer .headerButtonContainer button {
   color: #EEE;
   padding: 5%;
@@ -364,6 +369,13 @@ header .teamIntroMissionContainer .missionContainer p {
   .team .teamMember .githubLink {
     margin-left: -10%;
   }
+}
+.team .teamMember .githubLink:hover {
+  background-color: #EEE;
+  cursor: pointer;
+}
+.team .teamMember .githubLink:hover a {
+  color: #C96567;
 }
 .team .teamMember a {
   text-decoration: none;
