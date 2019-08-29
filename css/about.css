@@ -265,143 +265,121 @@ header .headerTextButtonContainer .headerButtonContainer button {
     background-color: rgba(16, 16, 16, 0.8);
   }
 }
-.stories {
+header {
   background: #314455;
+}
+header nav {
+  height: 10vh;
+}
+header nav .navLinks {
+  height: 50%;
+}
+header nav .navLogo img {
+  height: 50%;
+}
+header .teamIntroMissionContainer {
+  color: #EEE;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #EEE;
-  min-height: 40vh;
 }
-.stories .storiesSectionTitleContainer {
-  padding: 2.5%;
-  font-size: 3rem;
-}
-.stories .storiesContainer {
-  max-width: 95%;
-}
-@media (max-width: 800px) {
-  .stories .storiesContainer {
-    max-width: 90%;
-  }
-}
-@media (max-width: 500px) {
-  .stories .storiesContainer {
-    max-width: 88%;
-  }
-}
-.stories .storiesContainer .storyContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1%;
-}
-.stories .storiesContainer .storyContainer .storyImageContainer {
-  position: relative;
-}
-@media (max-width: 800px) {
-  .stories .storiesContainer .storyContainer .storyImageContainer {
-    position: static;
-    margin: 0;
-  }
-}
-@media (max-width: 500px) {
-  .stories .storiesContainer .storyContainer .storyImageContainer {
-    position: static;
-    margin: 0;
-  }
-}
-.stories .storiesContainer .storyContainer .storyImageContainer img {
-  width: 100%;
-  height: auto;
-}
-.stories .storiesContainer .storyContainer .storyImageContainer button {
-  position: absolute;
-  top: 10%;
-  left: 65%;
-  background-color: #C96567;
-  color: #EEE;
-  border-radius: 5px;
-  border: none;
-  padding: 2.5%;
-}
-.stories .storiesContainer .storyContainer .storyImageContainer button:hover {
-  background: #EEE;
-  color: #C96567;
-  cursor: pointer;
-}
-@media (max-width: 800px) {
-  .stories .storiesContainer .storyContainer .storyImageContainer button {
-    position: static;
-    width: 100%;
-    border-radius: 0px;
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 500px) {
-  .stories .storiesContainer .storyContainer .storyImageContainer button {
-    position: static;
-    width: 100%;
-    border-radius: 0px;
-    font-size: 1.5rem;
-  }
-}
-.stories .storiesContainer .storyContainer .storyDescription {
-  background-color: black;
-  width: 95%;
-  height: 100%;
-  padding: 2.5%;
-}
-@media (max-width: 500px) {
-  .stories .storiesContainer .storyContainer .storyDescription {
-    margin-bottom: 2.5%;
-  }
-}
-.stories .storiesContainer .storyContainer h3 {
-  font-size: 1.5rem;
-  margin-bottom: 5%;
-}
-.cta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #97AABD;
-}
-.cta p {
-  color: #EEE;
-  font-size: 4rem;
+header .teamIntroMissionContainer .introContainer {
   text-align: center;
-  padding: 5%;
-  line-height: 125%;
+}
+header .teamIntroMissionContainer .introContainer h2 {
+  font-size: 3rem;
+  padding: 2.5%;
+}
+header .teamIntroMissionContainer .introContainer p {
+  font-size: 1.25rem;
+  padding: 2.5%;
+}
+header .teamIntroMissionContainer .missionContainer {
+  text-align: center;
+}
+header .teamIntroMissionContainer .missionContainer p {
+  font-size: 1.25rem;
+  padding: 2.5%;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #C96567;
+  color: #EEE;
 }
 @media (max-width: 500px) {
-  .cta p {
-    font-size: 2rem;
+  .team {
+    flex-direction: column;
   }
+}
+.team .teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 2%;
 }
 @media (max-width: 800px) {
-  .cta .ctaImageContainer {
-    order: 1;
+  .team .teamMember {
+    width: 30%;
   }
 }
 @media (max-width: 500px) {
-  .cta .ctaImageContainer {
-    display: none;
+  .team .teamMember {
+    width: 95%;
   }
 }
-.cta button {
-  background-color: #C96567;
-  color: #EEE;
-  border: none;
-  padding: 3%;
-  margin-bottom: 20%;
-  border-radius: 5px;
-  font-size: 2rem;
+.team .teamMember img {
+  width: 100%;
 }
-.cta button:hover {
-  background: #EEE;
-  color: #C96567;
+@media (max-width: 500px) {
+  .team .teamMember img {
+    width: 95%;
+  }
+}
+.team .teamMember h2,
+.team .teamMember h3,
+.team .teamMember p,
+.team .teamMember a {
+  padding: 5%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .team .teamMember h2,
+  .team .teamMember h3,
+  .team .teamMember p,
+  .team .teamMember a {
+    padding: 2%;
+    width: 90%;
+  }
+}
+.team .teamMember .name,
+.team .teamMember .role {
+  text-align: center;
+  width: 100%;
+}
+.team .teamMember .githubLink {
+  border: 1px solid #EEE;
+  width: 80%;
+  text-align: center;
+  padding: 2.5%;
+}
+@media (max-width: 500px) {
+  .team .teamMember .githubLink {
+    margin-left: -10%;
+  }
+}
+.team .teamMember .githubLink:hover {
+  background-color: #EEE;
   cursor: pointer;
+}
+.team .teamMember .githubLink:hover a {
+  color: #C96567;
+}
+.team .teamMember a {
+  text-decoration: none;
+  color: #EEE;
 }
 footer {
   background-color: #314455;
